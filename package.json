@@ -1,6 +1,6 @@
 {
   "name": "express-refractor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Don't serve Babel transpiled files if you don't need to!",
   "main": "index.js",
   "scripts": {
