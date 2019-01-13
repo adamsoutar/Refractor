@@ -1,0 +1,10 @@
+{
+  "es6": {
+    "Firefox": 45,
+    "Chrome": 49,
+    "Safari": 9,
+    "Edge": 0,
+    "Opera": 36,
+    "Android": 67
+  }
+}
