@@ -1,4 +1,4 @@
-![Refractor Logo](LogoLarge.png)
+![Refractor Logo](https://raw.githubusercontent.com/Adybo123/Refractor/master/LogoLarge.png)
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -48,7 +48,7 @@ In your site files, for ES6 scripts, name the compatible, Babel version ```scrip
 app.use(Refractor.static({
     path: '/www',
     '404URL': '404.html',
-    
+
     config: { (See Below) }
 }))
 ```
