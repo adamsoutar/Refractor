@@ -45,6 +45,8 @@ In your site files, for ES6 scripts, name the compatible, Babel version ```scrip
 ## Advanced Configuration
 You can call ```Refractor.static``` with an object instead of a path string to use a more advanced configuration. Here you can provide a 404 page URL, and a ```config``` object; explained below. 
 
+```path``` is not optional, ```404URL``` and ```config``` are.
+
 ```javascript
 app.use(Refractor.static({
     path: '/www',
@@ -67,6 +69,6 @@ The config option is a set of custom rules for Refractor. For example, to detect
 
 This custom 'flexbox' rule matches when the user is on Chrome or Firefox major version 21/28 or above.  Then, for example, you could create ```index.html``` and ```index.flexbox.html```.
 
-You can supply multiple custom rules within the config option. 
+You can supply multiple custom rules within the config option.
 
-```path``` is not optional, ```404URL``` and ```config``` are.
+For a list of browser names Refractor matches against, see [ua-parser-js](https://github.com/faisalman/ua-parser-js#methods)
