@@ -65,6 +65,8 @@ The config option is a set of custom rules for Refractor. For example, to detect
 }
 ```
 
-The 'flexbox' rule matches when the user is on Chrome or Firefox major version 21/28 or above.  Then, for example, you could create ```index.html``` and ```index.flexbox.html```.
+This custom 'flexbox' rule matches when the user is on Chrome or Firefox major version 21/28 or above.  Then, for example, you could create ```index.html``` and ```index.flexbox.html```.
 
-You can supply multiple custom rules within the config option. ```path``` is not optional, ```404URL``` and ```config``` are.
+You can supply multiple custom rules within the config option. 
+
+```path``` is not optional, ```404URL``` and ```config``` are.
