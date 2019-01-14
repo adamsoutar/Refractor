@@ -43,6 +43,7 @@ app.listen(80, () => console.log('Server up!'))
 In your site files, for ES6 scripts, name the compatible, Babel version ```scriptname.js``` , and the shorter, ES6 version ```scriptname.es6.js```. Refractor will determine if the browser making the request supports ES6, and serve the appropriate script. If an ES6 version isn't found for some files, Refractor will serve the same script to all browsers.
 
 ## Advanced Configuration
+You can call ```Refractor.static``` with an object instead of a path string to use a more advanced configuration. Here you can provide a 404 page URL, and a ```config``` object; explained below. 
 
 ```javascript
 app.use(Refractor.static({
@@ -53,17 +54,17 @@ app.use(Refractor.static({
 }))
 ```
 
-The config option is a set of custom rules for Refractor. For example, to detect some WebKit browsers, you could use:
+The config option is a set of custom rules for Refractor. For example, to detect some modern browsers which support Flexbox you could use:
 
 ```javascript
 {
-    'webkit': {
-        'Chrome': 0,
-        'Opera': 0
+    flexbox: {
+        Chrome: 21,
+        Firefox: 28
     }
 }
 ```
 
-The 'webkit' rule matches when the user is on Chrome or Opera version zero or above.  Then, for example, you could create ```index.html``` and ```index.webkit.html```.
+The 'flexbox' rule matches when the user is on Chrome or Firefox major version 21/28 or above.  Then, for example, you could create ```index.html``` and ```index.flexbox.html```.
 
 You can supply multiple custom rules within the config option. ```path``` is not optional, ```404URL``` and ```config``` are.
